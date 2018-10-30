@@ -34,28 +34,32 @@
         </section>
     </nav>
 
-    <section class="container">
-        <article class="container__img">
+    <section class="section">
+        <article class="section__img">
 
-            <section class="container__img__name">
+            <section class="section__img__name">
                 <h1>{{titulo}}</h1>
                 <h1>{{precio}}</h1>
             </section>
 
-            <section class="container__img__product">
+            <section class="section__img__product">
                 <img src="{{img}}">
             </section>
 
         </article>
-        <article class="container__info">
+        <article class="section__info">
 
-            <section  class="container__info__text">
+            <section  class="section__info__text">
+                <p class="subTittle"> CATEGORIÁ </p>
+                <p> {{categoria}} </p>
+                <p class="subTittle"> MATERIAL </p>
+                <p> {{material}} </p>
+                
                 <p>{{descripcion}}</p>
-                <p> Categoria: {{categoria}} </p>
 
             </section>
 
-            <section  class="container__info__btn">
+            <section  class="section__info__btn">
                 <button> AÑADIR AL CARRITO</button>
             </section>
 

@@ -47,14 +47,15 @@
         <section class="products">
 
             {{#each products}}
-
-            <section class="products__crafts">
+            <a href="/tienda?producto={{titulo}}">
+                <section class="products__crafts">
 
                 <img src="{{img}}">
                 <p>{{titulo}}</p>
                 <p>{{precio}} </p>
                <a> <button>AÑADIR AL CARRITO</button></a>
             </section>
+            </a>
 
             {{/each}}
 
