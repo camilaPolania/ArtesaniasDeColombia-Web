@@ -988,10 +988,15 @@ body {
   margin: auto;
 }
 
-.section__info p {
+.section__info__text {
+  width: 70%;
+  margin: auto;
+}
+
+.section__info__text p {
   font-family: nunito, sans-serif;
   color: black;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 * {

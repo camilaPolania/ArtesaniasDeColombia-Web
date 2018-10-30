@@ -44,25 +44,52 @@ app.get('/', function (request, response) {
 
 app.get('/tienda', function (request, response) {
     var link = request.query.producto;
+    var material = request.query.material;
+    console.log('material seleccionado: '+material);
     const collection = db.collection('Productos');
-    collection.find({}).toArray(function (err, docs) {
-        if (err) {
-            console.error(err);
-            response.send(err);
-            return;
-        }
+    if (material != null && material != "" && material != undefined) {
+        console.log('entro a filtro de materiales ***********');
+        collection.find({
+            material: material,
+        }).toArray(function (err, docs) {
+            if (err) {
+                console.error(err);
+                response.send(err);
+                return;
+            }
 
-        var product = findObjectByKey(docs, "titulo", link);
+            var product = findObjectByKey(docs, "titulo", link);
 
-        var contexto = {
-            products: docs,
-        };
-        if (product !== null && product !== undefined) {
-            response.render('producto', product);
-        } else {
-            response.render('tienda', contexto);
-        }
-    });
+            var contexto = {
+                products: docs,
+            };
+            if (product !== null && product !== undefined) {
+                response.render('producto', product);
+            } else {
+                response.render('tienda', contexto);
+            }
+        });
+    } else {
+        collection.find({}).toArray(function (err, docs) {
+            if (err) {
+                console.error(err);
+                response.send(err);
+                return;
+            }
+
+            var product = findObjectByKey(docs, "titulo", link);
+
+            var contexto = {
+                products: docs,
+            };
+            if (product != null && product != undefined) {
+                response.render('producto', product);
+            } else {
+                response.render('tienda', contexto);
+            }
+        });
+    }
+
 });
 
 

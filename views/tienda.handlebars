@@ -42,6 +42,66 @@
         </section>
     </header>
 
+    <label>CATEGORÁ</label>
+    <select>
+        <a>
+            <option value="todo">Todo</option>
+        </a>
+        <a>
+            <option value="hogar">Hogar</option>
+        </a>
+        <a>
+            <option value="accesorios">Accesorios</option>
+        </a>
+        <a>
+            <option value="oficina">Oficina</option>
+        </a>
+    </select>
+
+    <label>MATERIAL</label>
+    <select class="material">
+        <option>Todo</option>
+        <option Madera</option>
+        <option>Fique</option>
+        <option>Madera</option>
+        <option>Molas</option>
+        <option>Palo Sangre</option>
+        <option>Hilos de Algodón</option>
+        <option>Chaquiras</option>
+        <option>Mopa Mopa</option>
+
+        <!-- 
+        <option href="/tienda?material=">Todo</option>
+        <option >Madera</option>
+        <option href="/tienda?material=Fique">Fique</option>
+        <option href="/tienda?material=Madera">Madera</option>
+        <option ><a href="/tienda?material=Molas">Molas</a></option>
+        <option ><a href="/tienda?material=Palode Sangre">Palo Sangre</a></option>
+        <option ><a href="/tienda?material=Hilos de Algodón">Hilos de Algodón</option>
+        <option ><a href="/tienda?material=Chaquiras">Chaquiras</a></option>
+        <option ><a href="/tienda?material=Mopa Mopa">Mopa Mopa</a></option>
+        -->
+    </select>
+
+    <label>PRECIO</label>
+    <select>
+        <a>
+            <option value="todo">Todo</option>
+        </a>
+        <a>
+            <option value="precio">50 a 100</option>
+        </a>
+        <a>
+            <option value="precio">100 a 200</option>
+        </a>
+        <a>
+            <option value="precio">200 a 300</option>
+        </a>
+        <a>
+            <option value="precio">Más de 300</option>
+        </a>
+    </select>
+
     <section class="container">
 
         <section class="products">
@@ -50,11 +110,11 @@
             <a href="/tienda?producto={{titulo}}">
                 <section class="products__crafts">
 
-                <img src="{{img}}">
-                <p>{{titulo}}</p>
-                <p>{{precio}} </p>
-               <a> <button>AÑADIR AL CARRITO</button></a>
-            </section>
+                    <img src="{{img}}">
+                    <p>{{titulo}}</p>
+                    <p>{{precio}} </p>
+                    <a> <button>AÑADIR AL CARRITO</button></a>
+                </section>
             </a>
 
             {{/each}}
@@ -64,7 +124,8 @@
 
 
 
-    <script src="/style/main.js"></script>
+    <script src="/style/filtro.js"></script>
+
 </body>
 
 </html>
