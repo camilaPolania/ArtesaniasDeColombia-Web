@@ -1,0 +1,114 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    font-family: bebas-neue, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    &__container{
+        width: 80%;
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+
+        &__logo{
+            width: auto;
+            height: 50%;
+        }
+
+        &__items{
+            display: flex;
+            align-items: center;
+
+           &__list{
+               list-style-type: none;
+               padding: 0%;
+
+               img{
+                   width: 60%;
+                   height: auto;
+               }
+    
+               
+           }
+        }
+    }
+}
+
+.background{
+    background-image: url("/imagenes/fondo_tienda.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+
+    &__store{
+        display: flex;
+        align-items: flex-end;
+        height: 90%;
+        width: 80%;
+    
+        &__tittle{
+            display: block;
+            font-size: 60px;
+            color: white;
+            align-self: flex-end;
+        }
+
+    }
+}
+
+
+    .products{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+
+    &__crafts{
+
+        margin-top: 3%;
+        align-content: center;
+        height: auto;
+        width: 30%;
+        padding: 2%;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        p{
+             font-size: 20px;
+             color: black;
+             font-weight: 200;
+            }
+       
+
+        }
+
+
+    }

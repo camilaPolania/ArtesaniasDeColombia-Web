@@ -56,7 +56,7 @@ body{
 }
 
 .fondo{
-    background-image: url(./imagenes/artesania.jpg);
+    background-image: url("/imagenes/artesania.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -769,6 +769,9 @@ body{
             }
 
     }
+
+@import "./producto.scss";
+@import "./tienda.scss";
 
 
 

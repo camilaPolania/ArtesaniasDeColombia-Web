@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/style/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/umy6dwm.css">
+    <title>Tienda</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <section class="navbar__container">
+            <img class="navbar__container__logo" src="/imagenes/logo_artesania.png">
+            <ul class="navbar__container__items">
+                <li class="navbar__container__items__list">
+                    <img src="./imagenes/search.png">
+                </li>
+
+                <li class="navbar__container__items__list">
+                    <img src="./imagenes/perfil.png">
+                </li>
+
+                <li class="navbar__container__items__list">
+                    <img src="./imagenes/favorite.png">
+                </li>
+
+                <li class="navbar__container__items__list">
+                    <img src="./imagenes/shoppingBag.png">
+                </li>
+
+            </ul>
+        </section>
+    </nav>
+
+    <header class="background">
+        <section class="background__store">
+            <p class="background__store__tittle">PRODUCTOS ARTESANÍAS DE COLOMBIA</p>
+        </section>
+    </header>
+
+    <section class="container">
+
+        <section class="products">
+
+            {{#each products}}
+
+            <section class="products__crafts">
+
+                <img src="{{img}}">
+                <p>{{titulo}}</p>
+                <p>{{precio}} </p>
+               <a> <button>AÑADIR AL CARRITO</button></a>
+            </section>
+
+            {{/each}}
+
+        </section>
+    </section>
+
+
+
+    <script src="/style/main.js"></script>
+</body>
+
+</html>

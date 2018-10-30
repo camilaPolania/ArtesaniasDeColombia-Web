@@ -74,7 +74,7 @@ body {
 }
 
 .fondo {
-  background-image: url(./imagenes/artesania.jpg);
+  background-image: url("/imagenes/artesania.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -885,5 +885,251 @@ body {
   .footer__container__img {
     display: none !important;
   }
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: black;
+}
+
+.navbar__container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__container__logo {
+  width: auto;
+  height: 50%;
+}
+
+.navbar__container__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__container__items__list {
+  list-style-type: none;
+  padding: 0%;
+}
+
+.navbar__container__items__list img {
+  width: 60%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container__img {
+  width: 50%;
+  background-color: #e6e6e6;
+}
+
+.container__img__name h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.container__info {
+  width: 50%;
+}
+
+.container__info p {
+  color: white;
+  font-size: 30px;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar__container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__container__logo {
+  width: auto;
+  height: 50%;
+}
+
+.navbar__container__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__container__items__list {
+  list-style-type: none;
+  padding: 0%;
+}
+
+.navbar__container__items__list img {
+  width: 60%;
+  height: auto;
+}
+
+.background {
+  background-image: url("/imagenes/fondo_tienda.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.background__store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 90%;
+  width: 80%;
+}
+
+.background__store__tittle {
+  display: block;
+  font-size: 60px;
+  color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
+.products__crafts {
+  margin-top: 3%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: auto;
+  width: 30%;
+  padding: 2%;
+}
+
+.products__crafts img {
+  width: 100%;
+  height: auto;
+}
+
+.products__crafts p {
+  font-size: 20px;
+  color: black;
+  font-weight: 200;
 }
 /*# sourceMappingURL=main.css.map */

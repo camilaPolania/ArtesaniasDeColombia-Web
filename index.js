@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const app = express();
 const url = 'mongodb://localhost:27017';
-const dbName = 'productos';
+const dbName = 'Artesanias';
 
 const client = new MongoClient(url);
 var db = null;
@@ -30,9 +30,17 @@ app.get('/', function(request, response){
     response.render('index');
 });
 
+app.get('/producto', function(request, response){
+    response.render('producto');
+});
+
 app.get('/tienda', function(request, response){
-    const collection = db.collection('artesanias');
-    collection.find({}).toArray(function(err,docs){
+    const collection = db.collection('Productos');
+    collection.find({
+        precio:{
+            '$gt': 100,
+        }
+    }).toArray(function(err,docs){
         if(err){
             console.error(err);
             response.send(err);
@@ -42,7 +50,7 @@ app.get('/tienda', function(request, response){
         var contexto = {
             products: docs,
         };
-        response.render('artesania', contexto);
+        response.render('tienda', contexto);
 
     });
 });
