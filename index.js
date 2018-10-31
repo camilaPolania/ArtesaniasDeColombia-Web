@@ -43,11 +43,11 @@ app.get('/', function (request, response) {
 });
 
 app.get('/tienda', function (request, response) {
-    var link= request.query.producto;
+    var link = request.query.producto;
     var material = request.query.material;
     var categoria = request.query.categoria;
     var precio = request.query.precio;
-    console.log('material seleccionado: '+material);
+    console.log('material seleccionado: ' + material);
     const collection = db.collection('Productos');
     if (material !== null && material !== "" && material !== undefined) {
         console.log('entro a filtro de materiales ***********');
@@ -71,9 +71,7 @@ app.get('/tienda', function (request, response) {
                 response.render('tienda', contexto);
             }
         });
-    } 
-
-    if (categoria !== null && categoria !== "" && categoria !== undefined) {
+    } else if (categoria !== null && categoria !== "" && categoria !== undefined) {
         console.log('entro a filtro de materiales ***********');
         collection.find({
             categoria: categoria,
@@ -89,7 +87,7 @@ app.get('/tienda', function (request, response) {
                 products: docs,
             };
             if (product !== null && product !== undefined) {
-                
+
                 //response.send("enviado");
                 response.render('producto', product);
             } else {
@@ -97,12 +95,12 @@ app.get('/tienda', function (request, response) {
                 response.render('tienda', contexto);
             }
         });
-    } 
-
-    if (precio !== null && precio !== "" && precio !== undefined) {
+    } else if (precio !== null && precio !== "" && precio !== undefined) {
         console.log('entro a filtro de materiales ***********');
         collection.find({
-            precio: { $lte: parseFloat(precio) },
+            precio: {
+                $lte: parseFloat(precio)
+            },
         }).toArray(function (err, docs) {
             if (err) {
                 console.error(err);
@@ -115,7 +113,7 @@ app.get('/tienda', function (request, response) {
                 products: docs,
             };
             if (product !== null && product !== undefined) {
-                
+
                 //response.send("enviado");
                 response.render('producto', product);
             } else {
@@ -123,9 +121,7 @@ app.get('/tienda', function (request, response) {
                 response.render('tienda', contexto);
             }
         });
-    } 
-    
-    else {
+    } else {
         collection.find({}).toArray(function (err, docs) {
             if (err) {
                 console.error(err);
