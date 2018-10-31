@@ -40,9 +40,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .navbar__container__logo {
@@ -61,7 +58,7 @@ body {
 
 .navbar__container__items__list {
   list-style-type: none;
-  padding: 0%;
+  margin: 0%;
 }
 
 .navbar__container__items__list img {
@@ -72,6 +69,11 @@ body {
 .navbar__container__items__list p {
   color: white;
   float: left;
+}
+
+.navbar__container__items__list a {
+  text-decoration: none;
+  color: white;
 }
 
 .section {
@@ -196,17 +198,6 @@ body {
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-}
-
-.ft__logo__boxOne {
-  width: 50%;
-  margin: auto;
-}
-
-.ft__logo__boxOne a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
 }
 
 .ft__logo__boxTwo {

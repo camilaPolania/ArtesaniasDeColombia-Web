@@ -49,6 +49,10 @@ body{
                    color: white;
                    float: left; 
                }
+               a{
+                text-decoration: none;
+                color: white;
+            }
     
                
            }
@@ -245,18 +249,6 @@ body{
             flex-direction: row;
             width: 40%;
             margin-top: 20px;
-
-            &__boxOne{
-                width: 50%;
-                margin: auto;
-
-                a{
-                    text-decoration: none;
-                    color: white;
-                    font-size: 20px; 
-                }
-
-            }
 
             &__boxTwo{
                 width: 50%;

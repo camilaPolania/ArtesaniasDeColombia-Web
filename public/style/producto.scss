@@ -26,7 +26,7 @@ body{
         display: flex;
         height: 70px;
         align-items: center;
-        justify-content: space-between;
+        
 
         &__logo{
             width: auto;
@@ -36,11 +36,10 @@ body{
         &__items{
             display: flex;
             align-items: center;
-
+        
            &__list{
                list-style-type: none;
-               padding: 0%;
-
+               margin: 0%;
                img{
                    width: 60%;
                    height: auto;
@@ -49,6 +48,10 @@ body{
                p{
                 color: white;
                 float: left; 
+            }
+            a{
+                text-decoration: none;
+                color: white;
             }
     
                
@@ -155,18 +158,6 @@ body{
             flex-direction: row;
             width: 40%;
             margin-top: 20px;
-
-            &__boxOne{
-                width: 50%;
-                margin: auto;
-
-                a{
-                    text-decoration: none;
-                    color: white;
-                    font-size: 20px; 
-                }
-
-            }
 
             &__boxTwo{
                 width: 50%;

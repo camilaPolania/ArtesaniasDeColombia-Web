@@ -60,7 +60,6 @@ body {
 
 .navbar__container__items__list {
   list-style-type: none;
-  padding: 0%;
 }
 
 .navbar__container__items__list img {
@@ -71,6 +70,11 @@ body {
 .navbar__container__items__list p {
   color: white;
   float: left;
+}
+
+.navbar__container__items__list a {
+  text-decoration: none;
+  color: white;
 }
 
 .background {
@@ -104,6 +108,18 @@ body {
   color: white;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 500px;
 }
 
 .ft {
@@ -144,17 +160,6 @@ body {
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-}
-
-.ft__logo__boxOne {
-  width: 50%;
-  margin: auto;
-}
-
-.ft__logo__boxOne a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
 }
 
 .ft__logo__boxTwo {

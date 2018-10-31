@@ -73,6 +73,11 @@ body {
   float: left;
 }
 
+.navbar__container__items__list a {
+  text-decoration: none;
+  color: white;
+}
+
 .background {
   background-image: url("/imagenes/fondo_tienda.png");
   background-size: cover;
@@ -303,17 +308,6 @@ body {
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-}
-
-.ft__logo__boxOne {
-  width: 50%;
-  margin: auto;
-}
-
-.ft__logo__boxOne a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
 }
 
 .ft__logo__boxTwo {
