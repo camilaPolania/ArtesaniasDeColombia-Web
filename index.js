@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const app = express();
 const url = 'mongodb://localhost:27017';
-const dbName = 'Artesanias';
+const dbName = 'productos';
 
 const client = new MongoClient(url);
 var db = null;
@@ -48,7 +48,7 @@ app.get('/tienda', function (request, response) {
     var categoria = request.query.categoria;
     var precio = request.query.precio;
     console.log('material seleccionado: ' + material);
-    const collection = db.collection('Productos');
+    const collection = db.collection('artesanias');
     if (material !== null && material !== "" && material !== undefined) {
         console.log('entro a filtro de materiales ***********');
         collection.find({
