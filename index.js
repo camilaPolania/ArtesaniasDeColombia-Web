@@ -43,12 +43,13 @@ app.get('/', function (request, response) {
 });
 
 app.get('/tienda', function (request, response) {
-    var link = request.query.producto;
+    var link= request.query.producto;
     var material = request.query.material;
-    var categoria= request.query.categoria;
+    var categoria = request.query.categoria;
+    var precio = request.query.precio;
     console.log('material seleccionado: '+material);
     const collection = db.collection('Productos');
-    if (material != null && material != "" && material != undefined) {
+    if (material !== null && material !== "" && material !== undefined) {
         console.log('entro a filtro de materiales ***********');
         collection.find({
             material: material,
@@ -63,7 +64,7 @@ app.get('/tienda', function (request, response) {
             var contexto = {
                 products: docs,
             };
-            if (product != null && product != undefined) {
+            if (product !== null && product !== undefined) {
                 response.render('producto', product);
             } else {
                 console.log("entro a renderizar con el filtro");
@@ -72,7 +73,7 @@ app.get('/tienda', function (request, response) {
         });
     } 
 
-    if (categoria != null && categoria != "" && categoria != undefined) {
+    if (categoria !== null && categoria !== "" && categoria !== undefined) {
         console.log('entro a filtro de materiales ***********');
         collection.find({
             categoria: categoria,
@@ -87,7 +88,33 @@ app.get('/tienda', function (request, response) {
             var contexto = {
                 products: docs,
             };
-            if (product != null && product != undefined) {
+            if (product !== null && product !== undefined) {
+                
+                //response.send("enviado");
+                response.render('producto', product);
+            } else {
+                console.log("entro a renderizar con el filtro");
+                response.render('tienda', contexto);
+            }
+        });
+    } 
+
+    if (precio !== null && precio !== "" && precio !== undefined) {
+        console.log('entro a filtro de materiales ***********');
+        collection.find({
+            precio: { $lte: parseFloat(precio) },
+        }).toArray(function (err, docs) {
+            if (err) {
+                console.error(err);
+                return;
+            }
+
+            var product = findObjectByKey(docs, "titulo", link);
+
+            var contexto = {
+                products: docs,
+            };
+            if (product !== null && product !== undefined) {
                 
                 //response.send("enviado");
                 response.render('producto', product);
@@ -110,7 +137,7 @@ app.get('/tienda', function (request, response) {
             var contexto = {
                 products: docs,
             };
-            if (product != null && product != undefined) {
+            if (product !== null && product !== undefined) {
                 response.render('producto', product);
             } else {
                 response.render('tienda', contexto);

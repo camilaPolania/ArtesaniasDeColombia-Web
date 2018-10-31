@@ -153,6 +153,10 @@ body{
         height: auto;
         width: 30%;
         padding: 2%;
+        a{
+            text-decoration: none;
+            color: black;
+        }
 
         &__art{
             width: 100%;
@@ -165,14 +169,19 @@ body{
              font-weight: 200;
             }
         &__icon{
-            width: 15%;
+           
             height: auto;
-            ul{
-                list-style: none;
-                li{
-                    display: inline-block;
-                }
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: -25px;
+
+            img{
+                width: 60%;
+                height: auto;
             }
+        
+            
         }
         
         

@@ -1196,6 +1196,11 @@ body {
   padding: 2%;
 }
 
+.products__crafts a {
+  text-decoration: none;
+  color: black;
+}
+
 .products__crafts__art {
   width: 100%;
   height: auto;
@@ -1208,16 +1213,23 @@ body {
 }
 
 .products__crafts__icon {
-  width: 15%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -25px;
 }
 
-.products__crafts__icon ul {
-  list-style: none;
-}
-
-.products__crafts__icon ul li {
-  display: inline-block;
+.products__crafts__icon img {
+  width: 60%;
+  height: auto;
 }
 
 .follow {
