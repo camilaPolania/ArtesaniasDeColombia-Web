@@ -54,7 +54,6 @@ app.get('/tienda', function (request, response) {
         }).toArray(function (err, docs) {
             if (err) {
                 console.error(err);
-                response.send(err);
                 return;
             }
 
@@ -63,9 +62,38 @@ app.get('/tienda', function (request, response) {
             var contexto = {
                 products: docs,
             };
-            if (product !== null && product !== undefined) {
+            if (product != null && product != undefined) {
+                
+                //response.send("enviado");
                 response.render('producto', product);
             } else {
+                console.log("entro a renderizar con el filtro");
+                response.render('tienda', contexto);
+            }
+        });
+    } 
+
+    if (categoria != null && categoria != "" && categoria != undefined) {
+        console.log('entro a filtro de materiales ***********');
+        collection.find({
+            categoria: categoria,
+        }).toArray(function (err, docs) {
+            if (err) {
+                console.error(err);
+                return;
+            }
+
+            var product = findObjectByKey(docs, "titulo", link);
+
+            var contexto = {
+                products: docs,
+            };
+            if (product != null && product != undefined) {
+                
+                //response.send("enviado");
+                response.render('producto', product);
+            } else {
+                console.log("entro a renderizar con el filtro");
                 response.render('tienda', contexto);
             }
         });
@@ -91,26 +119,6 @@ app.get('/tienda', function (request, response) {
     }
 
 });
-
-
-app.get('/agregarDocumento', function (request, response) {
-
-    const collection = db.collection('artesanias');
-    collection.insert({
-        tittle: 'ksdk',
-        material: 'dakd',
-        precio: 'hjk',
-
-    }, function (err, result) {
-        if (err) {
-            console.error(err);
-            response.send(err);
-            return;
-        }
-        response.send('documento agregado')
-    });
-});
-
 
 
 app.listen(5500, function () {
