@@ -26,7 +26,6 @@ body {
           justify-content: center;
   position: fixed;
   top: 0;
-  background-color: black;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -74,88 +73,37 @@ body {
   float: left;
 }
 
-.section {
+.background {
+  background-image: url("/imagenes/fondo_tienda.png");
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 800px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.section__img {
-  width: 50%;
-  background-color: #e6e6e6;
-}
-
-.section__img__name {
-  margin-top: 100px;
-}
-
-.section__img__name h1 {
-  color: #ff006a;
-  font-size: 50px;
-  margin-left: 50px;
-}
-
-.section__info {
-  width: 50%;
-  margin: auto;
+.background__store {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 90%;
+  width: 80%;
 }
 
-.section__info__text {
-  width: 90%;
-  margin: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.section__info__text__tittle {
-  font-size: 25px;
-  color: #ff006a;
-}
-
-.section__info__text__descrip {
-  font-family: nunito, sans-serif;
-  color: black;
-  font-size: 18px;
-  line-height: 160%;
-}
-
-.section__info__btn {
-  width: 90%;
-  margin: auto;
-}
-
-.section__info__btn__design {
-  margin-top: 20px;
-  padding: 15px 30px;
-  border-radius: 25px;
-  background-color: white;
-  border: 2px solid black;
-  color: black;
-  font-size: 20px;
-  font-family: bebas-neue, sans-serif;
-}
-
-.section__info__btn__design:hover {
-  background-color: black;
+.background__store__tittle {
+  display: block;
+  font-size: 60px;
   color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .ft {
@@ -218,4 +166,4 @@ body {
   width: 30%;
   height: auto;
 }
-/*# sourceMappingURL=producto.css.map */
+/*# sourceMappingURL=check.css.map */

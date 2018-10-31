@@ -42,6 +42,10 @@ app.get('/', function (request, response) {
     response.render('producto');
 });
 
+app.get('/check', function (request, response) {
+    response.render('check');
+});
+
 app.get('/tienda', function (request, response) {
     var link = request.query.producto;
     var material = request.query.material;
