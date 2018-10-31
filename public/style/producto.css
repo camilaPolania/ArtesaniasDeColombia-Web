@@ -26,6 +26,7 @@ body {
           justify-content: center;
   position: fixed;
   top: 0;
+  background-color: black;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -78,6 +79,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section__img {
@@ -90,8 +95,9 @@ body {
 }
 
 .section__img__name h1 {
-  color: white;
+  color: #ff006a;
   font-size: 50px;
+  margin-left: 50px;
 }
 
 .section__info {
@@ -100,13 +106,34 @@ body {
 }
 
 .section__info__text {
-  width: 70%;
+  width: 90%;
   margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section__info__text p {
   font-family: nunito, sans-serif;
   color: black;
   font-size: 17px;
+}
+
+.section__info__text__btn {
+  margin-top: 100px;
+}
+
+.section__info__text__btn__add {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  font-family: 'Oswald';
+  font-weight: 400;
+  border: 2px solid white;
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
 }
 /*# sourceMappingURL=producto.css.map */
