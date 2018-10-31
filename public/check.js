@@ -28,7 +28,7 @@ window.addEventListener('load', function (elem) {
         div.append(h1);
         div.append(h2);
 
-        document.querySelector('.contain__info').appendChild(div);
+        document.querySelector('.contain__info__products').appendChild(div);
     }
 
     var shoppingBag = JSON.parse(localStorage.getItem('shoppingBag'));
