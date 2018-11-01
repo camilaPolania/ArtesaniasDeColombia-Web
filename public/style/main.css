@@ -1317,6 +1317,7 @@ body {
   text-align: left;
   width: 80%;
   margin: auto;
+  margin-bottom: 5%;
 }
 
 .products__crafts {
@@ -1374,6 +1375,36 @@ body {
   height: auto;
 }
 
+@media only screen and (max-width: 500px) {
+  .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+  .products__crafts {
+    margin-top: 2%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: auto;
+    width: 80%;
+    padding: 1%;
+  }
+}
+
 .ft {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1422,6 +1453,55 @@ body {
 .ft__logo__boxTwo__artesaniaL {
   width: 30%;
   height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .ft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5%;
+    margin: auto;
+    background-color: black;
+  }
+  .ft__contact {
+    width: 80%;
+    margin: auto;
+  }
+  .ft__contact p {
+    color: white;
+    font-family: nunito, sans-serif;
+    line-height: 100%;
+    font-size: 10px;
+  }
+  .ft__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin-top: 0%;
+  }
+  .ft__logo__boxTwo {
+    width: 100%;
+    margin: auto;
+  }
+  .ft__logo__boxTwo__artesaniaL {
+    width: 100%;
+    height: auto;
+  }
 }
 
 * {

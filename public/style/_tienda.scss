@@ -170,6 +170,7 @@ body{
     text-align: left;
     width: 80%;
     margin: auto;
+    margin-bottom: 5%;
 
     &__crafts{
 
@@ -221,6 +222,35 @@ body{
         }
     }
 
+    @media only screen and (max-width: 500px){
+
+        .products{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10%;
+
+        &__crafts{
+        margin-top: 2%;
+        align-content: center;
+        height: auto;
+        width: 80%;
+        padding: 1%;
+
+
+        }
+        }
+
+
+
+    }
+
+
 
     .ft{
         display: flex;
@@ -230,7 +260,7 @@ body{
         justify-content: center;
         margin: auto;
         background-color: black;
-
+        
         &__contact{
 
             width: 40%;
@@ -262,6 +292,55 @@ body{
             }
         }
     }
+
+    @media only screen and (max-width: 500px){
+
+        .ft{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 200px;
+            justify-content: center;
+            margin-top: 5%;
+            margin: auto;
+            background-color: black;
+            
+            &__contact{
+    
+                width: 80%;
+                margin: auto;
+    
+                p{
+                    color: white;
+                    font-family: nunito, sans-serif;
+                    line-height: 100%;
+                    font-size: 10px;
+
+                }
+    
+    
+            }
+            &__logo{
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin-top: 0%;
+    
+                &__boxTwo{
+                    width: 100%;
+                    margin: auto;
+    
+                    &__artesaniaL{
+                        width: 100%;
+                        height: auto;
+                    }
+    
+                }
+            }
+        }
+
+    }
+
 
 
     

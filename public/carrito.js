@@ -32,5 +32,23 @@ window.addEventListener('load',function(){
             shoppingBag__render();
         });
     });
+
+
+
+
+    document.querySelectorAll('.section__info__btn__design').forEach(function(elemento){
+        elemento.addEventListener('click', function(evento){
+            evento.preventDefault();
+            let parent = elemento.parentElement.parentElement.parentElement;
+            let products = {
+                tittle : parent.querySelector('h1').innerText,
+                price : parent.querySelector('h2').innerText,
+            };
+
+            shoppingBag.push(products);
+            localStorage.setItem('shoppingBag', JSON.stringify(shoppingBag));
+            shoppingBag__render();
+        });
+    });
     console.log(shoppingBag);
 });
