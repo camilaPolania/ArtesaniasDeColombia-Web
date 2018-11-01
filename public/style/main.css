@@ -999,6 +999,12 @@ body {
   margin-left: 50px;
 }
 
+.section__img__name h2 {
+  color: #ff006a;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
 .section__info {
   width: 50%;
   margin: auto;
@@ -1375,36 +1381,6 @@ body {
   height: auto;
 }
 
-@media only screen and (max-width: 500px) {
-  .products {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: left;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 10%;
-  }
-  .products__crafts {
-    margin-top: 2%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    height: auto;
-    width: 80%;
-    padding: 1%;
-  }
-}
-
 .ft {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1456,6 +1432,133 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  .background__store {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 90%;
+    width: 80%;
+  }
+  .background__store__tittle {
+    display: block;
+    font-size: 30px;
+    color: white;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  .container__box {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .container__box__one {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .container__box__one a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .container__box__one h6 {
+    font-family: nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .container__box__one p {
+    color: #ff006a;
+    font-size: 20px;
+  }
+  .container__box__two {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .container__box__two p {
+    color: #ff006a;
+    font-size: 20px;
+  }
+  .container__box__two a {
+    text-decoration: none;
+    color: black;
+  }
+  .container__box__two h6 {
+    font-family: nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .container__box__three {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .container__box__three a {
+    text-decoration: none;
+    color: black;
+  }
+  .container__box__three h6 {
+    font-family: nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .container__box__three p {
+    color: #ff006a;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+  .products__crafts {
+    margin-top: 2%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: auto;
+    width: 80%;
+    padding: 1%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .ft {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1474,7 +1577,7 @@ body {
     background-color: black;
   }
   .ft__contact {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .ft__contact p {
@@ -1677,6 +1780,26 @@ body {
   font-size: 19px;
   font-weight: 400;
   line-height: 150%;
+}
+
+@media only screen and (max-width: 500px) {
+  .contain__info h1 {
+    font-size: 25px;
+    color: #ff006a;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  .contain__info p {
+    font-size: 15px;
+    color: black;
+    font-family: nunito, sans-serif;
+  }
+  .contain__info__products {
+    width: 80%;
+    height: 200px;
+    margin-top: 30px;
+    overflow-y: scroll;
+  }
 }
 
 .ft {

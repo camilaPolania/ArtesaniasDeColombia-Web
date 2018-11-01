@@ -222,36 +222,6 @@ body{
         }
     }
 
-    @media only screen and (max-width: 500px){
-
-        .products{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 10%;
-
-        &__crafts{
-        margin-top: 2%;
-        align-content: center;
-        height: auto;
-        width: 80%;
-        padding: 1%;
-
-
-        }
-        }
-
-
-
-    }
-
-
-
     .ft{
         display: flex;
         flex-direction: row;
@@ -295,6 +265,135 @@ body{
 
     @media only screen and (max-width: 500px){
 
+        .background{
+          
+            &__store{
+                display: flex;
+                align-items: flex-end;
+                height: 90%;
+                width: 80%;
+            
+                &__tittle{
+                    display: block;
+                    font-size: 30px;
+                    color: white;
+                    align-self: flex-end;
+                }
+        
+            }
+        }
+
+    }
+
+    @media only screen and (max-width: 500px){
+        .container{
+            width: 100%;
+            margin: auto;
+
+            &__box{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                margin-top: 50px;
+
+                &__one{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 10%;
+                    a{
+                        text-decoration: none;     
+                        color: black;   
+                        font-size: 20px;      
+                    }
+                    h6{
+                        font-family: nunito, sans-serif;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 130%;
+                        }
+                    p{
+                        color: rgb(255, 0, 106);
+                        font-size: 20px;
+                    }
+        
+            
+                }
+        
+                &__two{
+                
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 10%;
+        
+                    p{
+                        color: rgb(255, 0, 106);
+                        font-size: 20px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                    h6{
+                        font-family: nunito, sans-serif;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 130%;
+                        }
+                }
+        
+                &__three{
+        
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 10%;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                    h6{
+                    font-family: nunito, sans-serif;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 130%;
+                    }
+                    p{
+                        color: rgb(255, 0, 106);
+                        font-size: 20px;
+                    }
+                }
+        
+            }
+        }
+
+    }
+
+    @media only screen and (max-width: 500px){
+
+        .products{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10%;
+
+        &__crafts{
+        margin-top: 2%;
+        align-content: center;
+        height: auto;
+        width: 80%;
+        padding: 1%;
+
+        }
+    }
+    }
+
+    @media only screen and (max-width: 500px){
+
         .ft{
             display: flex;
             flex-direction: column;
@@ -307,7 +406,7 @@ body{
             
             &__contact{
     
-                width: 80%;
+                width: 100%;
                 margin: auto;
     
                 p{
