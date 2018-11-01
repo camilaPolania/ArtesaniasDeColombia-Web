@@ -1,6 +1,17 @@
 window.addEventListener('load', function (elem) {
     var shoppingBag__num = 0;
 
+    var shoppingBag = JSON.parse(localStorage.getItem('shoppingBag'));
+    if (shoppingBag == null) {
+        shoppingBag = [];
+    }
+
+    function shoppingBag__render() {
+        shoppingBag.forEach(function (elem) {
+            shoppingBag__num += parseInt(elem.price);
+        });
+        document.querySelector('.contain__pay p').innerText = shoppingBag__num;
+    }
     var posy = 0;
 
     window.addEventListener("scroll", function (bar) {
@@ -30,13 +41,11 @@ window.addEventListener('load', function (elem) {
 
         document.querySelector('.contain__info__products').appendChild(div);
     }
-
-    var shoppingBag = JSON.parse(localStorage.getItem('shoppingBag'));
-    if (shoppingBag == null) {
-        shoppingBag = [];
-    }
-
     shoppingBag.forEach(function (elem) {
         check(elem);
+        
+    console.log(elem.price);
     });
+
+    shoppingBag__render();
 });
