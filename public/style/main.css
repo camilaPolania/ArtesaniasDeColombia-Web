@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -890,6 +891,8 @@ body {
   }
 }
 
+/* ------------------------ ANIMACIÓN --------------------------------------------*/
+/* ---------------------MOLA--------------------------*/
 .animation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -917,7 +920,7 @@ body {
 
 .animation svg {
   margin: auto;
-  width: 70%;
+  width: 75%;
 }
 
 .path {
@@ -991,6 +994,30 @@ body {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+/*------ PARTICULAS ------*/
+.bubble {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.smallBubble {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(52, 55, 212, 0.671);
+}
+
+.mediumBubble {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(238, 94, 11, 0.74);
+}
+
+.largeBubble {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(228, 19, 141, 0.795);
 }
 
 * {

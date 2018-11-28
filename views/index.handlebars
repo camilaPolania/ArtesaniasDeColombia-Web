@@ -89,9 +89,10 @@
     <div class="bar"></div>
 
     <!-- Animación -->
-    <div class="animation">
+    <div class="animation" id="bubbleContainer">
 
         <p>MOLAS, FORMAS DE TRADICIÓN Y PROTECCIÓN</p>
+		
 
         <!-- background color -->
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -239,7 +240,7 @@
 	c7.6-1.1,13-8.2,11.9-15.8L1130,172.2c11.6-0.5,22.5-0.5,32.7,0.1l17.9,126.1c1.1,7.6,8.2,13,15.8,11.9c7.6-1.1,13-8.2,11.9-15.8
 	l-16.9-118.8c12.6,2.3,23.9,5.5,34,9.4l12.8,90.3c1.1,7.6,8.2,13,15.8,11.9c7.6-1.1,13-8.2,11.9-15.8l-10-70.4
 	C1311.4,239,1313,300.8,1313,300.8z"/>
-<path class="pathC" style="fill:none;stroke:#D1D055;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+<path class="pathC" id="start" style="fill:none;stroke:#D1D055;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
 	M569,496c0,0-283,74-261-346c0,0,9.2-2.8,28.5-0.5v152c0,6.6,5.4,12,12,12h7c6.6,0,12-5.4,12-12V156.2c6.6,1.9,13.8,4.4,21.6,7.4
 	v257.6c0,8.5,6.9,15.4,15.4,15.4h0.2c8.5,0,15.4-6.9,15.4-15.4V177.2c6.9,3.4,14.1,7.1,21.6,11.3V453c0,8.5,7,15.5,15.5,15.5
 	s15.5-7,15.5-15.5V207c7,4.4,14.2,9.2,21.6,14.3l0,236.7c0,8.5,7,15.5,15.5,15.5h0c8.5,0,15.5-7,15.5-15.5V243.7
@@ -366,7 +367,11 @@
 	M1432.3,537.5"/>
 
 </svg>
-    </div>
+
+<div class="btn">
+	<button id="normal">DAR CLICK</button>
+</div>	
+</div>
 
     <article class="interaccion">
 
@@ -499,7 +504,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<!-- Animacion-->
     <script src="/style/animation.js"></script>
 
 </body>
