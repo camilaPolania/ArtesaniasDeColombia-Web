@@ -40,3 +40,5 @@ function myFunctionThree() {
     document.getElementById("imagen").src = "./imagenes/frutero.png";
     document.getElementById("imagen").style.width = '90%';
 };
+
+
