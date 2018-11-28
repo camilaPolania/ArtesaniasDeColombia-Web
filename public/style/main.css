@@ -907,7 +907,7 @@ body {
           align-items: center;
   background-color: white;
   height: 100vh;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 
 .animation p {
@@ -921,15 +921,15 @@ body {
 }
 
 .path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 200;
-  -webkit-animation: dash 5s linear alternate infinite;
-          animation: dash 5s linear alternate infinite;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 8s linear alternate infinite;
+          animation: dash 8s linear alternate infinite;
 }
 
 @-webkit-keyframes dash {
   from {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 1500;
   }
   to {
     stroke-dashoffset: 0;
@@ -938,7 +938,55 @@ body {
 
 @keyframes dash {
   from {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 1500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.pathBag {
+  stroke-dasharray: 7000;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 6s linear alternate infinite;
+          animation: dash 6s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 7000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.pathC {
+  stroke-dasharray: 6000;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 6s linear alternate infinite;
+          animation: dash 6s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 6000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.pathA {
+  stroke-dasharray: 5500;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 6s linear alternate infinite;
+          animation: dash 6s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 5500;
   }
   to {
     stroke-dashoffset: 0;
