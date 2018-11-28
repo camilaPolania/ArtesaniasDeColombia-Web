@@ -775,6 +775,11 @@ body{
 
     }
 
+svg{
+    width: 100%;
+
+}
+
 @import "./_producto.scss";
 @import "./_tienda.scss";
 @import "./_check.scss";
