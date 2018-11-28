@@ -285,7 +285,7 @@ body{
 .interaccion{
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color:black;
     height: 100vh;
 
     &__container{
@@ -775,10 +775,38 @@ body{
 
     }
 
+    
+
+    .animation{
+
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 100vh;
+        margin-bottom: 70px;
+
+        p{
+            font-size: 60px;
+            margin-top: 10px;
+
+
+        }
+
+        svg{
+            margin: auto;
+            width: 70%;
+        }
+
+    }
+
+
     .path {
         stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: dash 20s linear alternate infinite;
+        stroke-dashoffset: 200;
+        animation: dash 5s linear alternate infinite;
     }
 
     @keyframes dash{

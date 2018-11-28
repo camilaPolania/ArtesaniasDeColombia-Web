@@ -890,11 +890,41 @@ body {
   }
 }
 
+.animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  height: 100vh;
+  margin-bottom: 70px;
+}
+
+.animation p {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+.animation svg {
+  margin: auto;
+  width: 70%;
+}
+
 .path {
   stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: dash 20s linear alternate infinite;
-          animation: dash 20s linear alternate infinite;
+  stroke-dashoffset: 200;
+  -webkit-animation: dash 5s linear alternate infinite;
+          animation: dash 5s linear alternate infinite;
 }
 
 @-webkit-keyframes dash {
