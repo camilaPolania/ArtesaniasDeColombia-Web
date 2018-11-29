@@ -10,14 +10,15 @@ const dbName = 'productos';
 const client = new MongoClient(url);
 var db = null;
 
-client.connect(function (err) {
-    if (err) {
-        console.error(err);
-        return;
+MongoClient.client('mongodb+srv://cluster0-ecypx.mongodb.net/productos',{
+    auth:{
+        user:'Polania_98',
+        password: 'daniVegano'
     }
-
-    db = client.db(dbName);
-
+},function(err, client){
+    if(err)throw err;
+    db= client.db('productos');
+    app.listen(process.env.PORT || 1234);
 });
 
 function findObjectByKey(array, key, value) {
