@@ -60,41 +60,6 @@ body{
     }
 }
 
-/*.fondo{
-    
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    background-color: orange;
-
-    &__info{
-        display: flex;
-        align-items: flex-end;
-        height: 90%;
-        width: 80%;
-    
-        &__tittle{
-            display: block;
-            font-size: 60px;
-            color: rgba(255, 255, 255, 0.692);
-            align-self: flex-end;
-        }
-        &__text{
-            display: block;
-            font-size: 20px;
-            color: rgba(255, 255, 255, 0.692);
-            align-self: flex-end;
-            font-family: nunito, sans-serif;
-            font-style: normal;
-        }
-
-    }
-}
-*/
-
 .header{
     background-color: rgb(243, 130, 0);
     display: flex;
@@ -129,24 +94,36 @@ body{
 .head {
     stroke-dasharray: 4000;
     stroke-dashoffset: 0;
-    animation: dash 10s linear forwards;
-  }
-
-  &:hover.head{
-
     fill: #68AB80;
-      
-}
+    stroke: #403754;
+    animation: animate 10s linear infinite;
+
+  }
   
-  @keyframes dash {
-      from{
+  @keyframes animate {
+   0%{
+       opacity: 0;
+       fill: none;
+       stroke-dashoffset: 4000;
+   }
 
-        stroke-dashoffset: 4000;
+   30%{
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 4000;
+   }
 
-      }
-      to{
-          stroke-dashoffset: 0;
-      }
+   70%{
+    fill: rgba(104, 171, 128, 0);
+   }
+
+   100%{
+       opacity: 10;
+       fill: rgb(104, 171, 128);
+       stroke-dashoffset: 0;
+   }
+
+
 }
 
 .ad{
@@ -260,10 +237,12 @@ body{
     display: flex;
     flex-direction: row;
     height: 100vh;
+    margin-bottom: 40px;
     justify-content: space-evenly;
     align-items: center;
-    
-        &__color{
+    background-color:rgb(187, 186, 186);
+
+    &__color{
             width: 27%;
             background-color:rgb(236, 236, 236);
             border: 2px;
@@ -308,35 +287,40 @@ body{
 
 @media only screen and (max-width:1000px){
     .property{
+
+        height: 350px;
             &__color{
                 width: 27%;
                 background-color:rgb(236, 236, 236);
                 border: 2px;
                 border-color: black;
+
                 &__one{ 
                 width: 100%;
                 }
     
                 &__text{
-                    text-align: center;
-                    justify-items: center;
+                    margin: 0%;
                     padding: 10px;
     
                     &__tittle{
-                        font-size:17px;
-                        justify-content: center;
+                        font-size:15px;
                     }
                     
                     &__info{
-                        font-size: 15px;
+                        font-size: 10px;
                         padding: 5px;
+                        font-weight: 400;
+                        font-family: nunito, sans-serif;
+                        font-style: normal;
                     }
+    
+                }
     
                 }
             }
     
         }
-}
 
 .interaccion{
     display: flex;
@@ -842,36 +826,56 @@ body{
         align-items: center;
         background-color: white;
         height: 100vh;
-        margin-bottom: 90px;
+        margin-bottom: 70px;
 
         p{
             font-size: 60px;
             margin-top: 10px;
+            text-align: center;
         }
+
+
 
         svg{
             margin: auto;
             width: 80%;
+            margin-top: 30px;
         }
     }
 
     .path {
-        stroke-dasharray: 1500;
+        stroke-dasharray: 2000;
         stroke-dashoffset: 0;
-        animation: dash 8s linear alternate infinite;
+        animation: dash 10s linear infinite;
       }
       
       @keyframes dash {
         from {
-            stroke-dashoffset: 1500;
+            stroke-dashoffset: 2000;
           }
           to {
             stroke-dashoffset: 0;
           }
       }
 
+      @media only screen and (max-width: 800px){
+        .animation{
+            margin-bottom: 50px;
+    
+            p{
+                font-size: 40px;
+                margin-top: 0px;
+                text-align: center;
+            }
+    
+            svg{
+                width: 100%;
+            }
+        }
+      }
+
       .pathBag {
-        stroke-dasharray: 7000;
+        stroke-dasharray: 7500;
         stroke-dashoffset: 0;
         animation: dash 6s linear alternate infinite;
       }
@@ -886,7 +890,7 @@ body{
       }
 
       .pathC{
-        stroke-dasharray: 6000;
+        stroke-dasharray: 6500;
         stroke-dashoffset: 0;
         animation: dash 6s linear alternate infinite;
       }
@@ -914,34 +918,6 @@ body{
             stroke-dashoffset: 0;
           }
       }
-
-      
-/*------ PARTICULAS ------*/
-
-
-.bubble{
-    border-radius: 50%;
-    position: absolute;
-  }
-  
-  .smallBubble{
-      width:20px;
-      height:20px;
-      background-color:rgba(52, 55, 212, 0.671)
-  }
-  
-  .mediumBubble{
-      width:30px;
-      height:30px;
-      background-color:rgba(238, 94, 11, 0.74);
-  }
-  
-  .largeBubble{
-      width:40px;
-      height:40px;
-    background-color:rgba(228, 19, 141, 0.795);
-  }
-
 
 
 @import "./_producto.scss";
