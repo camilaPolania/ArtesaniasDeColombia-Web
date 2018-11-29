@@ -77,47 +77,101 @@ body {
   color: white;
 }
 
-.fondo {
-  background-image: url("/imagenes/artesania.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+/*.fondo{
+    
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+
+    &__info{
+        display: flex;
+        align-items: flex-end;
+        height: 90%;
+        width: 80%;
+    
+        &__tittle{
+            display: block;
+            font-size: 60px;
+            color: rgba(255, 255, 255, 0.692);
+            align-self: flex-end;
+        }
+        &__text{
+            display: block;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.692);
+            align-self: flex-end;
+            font-family: nunito, sans-serif;
+            font-style: normal;
+        }
+
+    }
+}
+*/
+.header {
+  background-color: #f38200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: -1;
 }
 
-.fondo__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 90%;
-  width: 80%;
+.header svg {
+  height: 100hv;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
 }
 
-.fondo__info__tittle {
-  display: block;
-  font-size: 60px;
-  color: rgba(255, 255, 255, 0.692);
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+.header p {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: absolute;
 }
 
-.fondo__info__text {
-  display: block;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.692);
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  font-family: nunito, sans-serif;
-  font-style: normal;
+.head {
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 10s linear forwards;
+          animation: dash 10s linear forwards;
+}
+
+.head:hover {
+  fill: #68AB80;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 4000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 4000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .ad {
@@ -920,7 +974,7 @@ body {
 
 .animation svg {
   margin: auto;
-  width: 75%;
+  width: 80%;
 }
 
 .path {
@@ -928,15 +982,6 @@ body {
   stroke-dashoffset: 0;
   -webkit-animation: dash 8s linear alternate infinite;
           animation: dash 8s linear alternate infinite;
-}
-
-@-webkit-keyframes dash {
-  from {
-    stroke-dashoffset: 1500;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 @keyframes dash {
